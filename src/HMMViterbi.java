@@ -40,8 +40,14 @@ class HMMViterbi {
 			System.exit(1);
 		}
 		readCpgFile(args[0]);
-		for (State s:states) {s.print();}
+		//for (State s:states) {s.print();}
 		readDataFile(args[1]);
+		
+		
+		
+		
+		
+		
 		System.exit(0);
 	}
 	private static void readDataFile(String fname) {
@@ -60,7 +66,7 @@ class HMMViterbi {
 			inFile = new Scanner(readIn);	
 			while(inFile.hasNextLine()){
 				sequences[i]=inFile.nextLine();
-				System.out.println(sequences[i]);
+			
 				i++;
 			}
 			inFile.close();
